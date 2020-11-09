@@ -1,7 +1,7 @@
 # Reserve Portal
 
 **Live site:** will be added soon.\
-**Server side code** will be added soon. \
+**Server side code** will be added soon.
 
 ### Language, library, and packages:
 - JavaScript
