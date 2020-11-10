@@ -4,20 +4,20 @@ import logo from '../../../Images/logo.png';
 const Navbar = () => {
     return (
         <nav className='navbar navbar-expand-lg  pt-4' id='navbar' style={{ background: 'rgb(245, 245, 247)', opacity: '0.9' }}>
-            <img src={logo} alt='' className='img-fluid p-0' style={{ width: '8%' }}  />
+            <img src={logo} alt='' className='img-fluid p-0' style={{ width: '140px' }}  />
             <button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation'>
                 <span className='navbar-toggler-icon'></span>
             </button>
             <div className='collapse navbar-collapse' id='navbarNav'>
                 <ul className='navbar-nav ml-auto'>
                     <li className='nav-item ml-4'>
-                        <a className='nav-link' href='#home'>Home <span className='sr-only'>(current)</span></a>
+                        <a className='nav-link' href='#header'>Home <span className='sr-only'>(current)</span></a>
                     </li>
                     <li className='nav-item ml-4'>
-                        <a className='nav-link' href='#projects'>Reservations</a>
+                        <a className='nav-link' href='#reservations'>Reservations</a>
                     </li>
                     <li className='nav-item ml-4'>
-                        <a className='nav-link' href='#blogs'>Client Review</a>
+                        <a className='nav-link' href='#reviews'>Client Review</a>
                     </li>
                     <li className='nav-item ml-4'>
                         <a className='nav-link' href='#about'>About Us</a>
