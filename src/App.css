@@ -18,7 +18,14 @@ body{
 }
 
 #header{
+  padding-bottom: 50px;
   background-color: #fff;
   clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 96%, 65% 100%, 21% 98%, 0 91%, 0% 43%, 0 0);
 
+}
+
+.caption{
+  color: #b74c42;
+  font-weight: 500;
+  font-size: 50px;
 }
