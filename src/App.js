@@ -9,11 +9,11 @@ function App() {
     <BrowserRouter>
       <Switch>
 
-        <Route exact path="/">
+        <Route exact path='/'>
           <Home />
         </Route>
 
-        <Route path="/home">
+        <Route path='/home'>
           <Home />
         </Route>
 
@@ -21,7 +21,7 @@ function App() {
           <AddReservations />
         </Route>
 
-        <Route path="*">
+        <Route path='*'>
           <PageNotFound />
         </Route>
 

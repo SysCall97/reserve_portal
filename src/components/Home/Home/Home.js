@@ -1,4 +1,5 @@
 import React from 'react';
+import About from '../About/About';
 import CustomerReview from '../CustomerReview/CustomerReview';
 import Header from '../Header/Header';
 import Navbar from '../Navbar/Navbar';
@@ -12,6 +13,7 @@ const Home = () => {
             <Header />
             <Reservations />
             <CustomerReview />
+            <About />
         </div>
     );
 };

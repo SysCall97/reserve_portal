@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <section className='row mt-5 mb-5 mw-100 pt-4 pl-4 pr-4 ml-0 mr-0' id='header'>
             <div className='text-dark col-md-4 d-flex justify-content-center align-items-center flex-column pl-5'>
-                <h1>Best Restaurents are waiting for you</h1>
+                <h1>Best Hotels Are Waiting For You</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
