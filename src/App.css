@@ -37,3 +37,24 @@ body{
 #about{
   background-color: #272727;
 }
+
+.formContainer{
+  border: 1px solid black;
+  margin-top: 30px;
+  width: min(100vw, 450px);
+  padding: 2%;
+}
+
+input, .form-btn{
+  width: 100%;
+  margin-top: 10px;
+}
+
+input{
+  padding-left: 2vh;
+  border: 1px solid lightgray;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline: none;
+}

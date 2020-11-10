@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../Images/logo.png';
 
 const Navbar = () => {
@@ -22,12 +23,12 @@ const Navbar = () => {
                     <li className='nav-item ml-4'>
                         <a className='nav-link' href='#about'>About Us</a>
                     </li>
-                    <li className='nav-item ml-4'>
+                    <Link className='nav-item ml-4' to='/login'>
                         <button type='button' className='btn btn-dark mt-1 mb-1' style={{ color: '#fff' }}>Log in</button>
-                    </li>
-                    <li className='nav-item ml-4'>
+                    </Link>
+                    <Link className='nav-item ml-4' to='/signup'>
                         <button type='button' className='btn btn-dark mt-1 mb-1' style={{ color: '#fff' }}>Sign up</button>
-                    </li>
+                    </Link>
                 </ul>
             </div>
         </nav>

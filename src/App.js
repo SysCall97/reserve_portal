@@ -6,6 +6,8 @@ import AddReservations from './components/AddReservations/AddReservations';
 import Home from './components/Home/Home/Home';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import { useEffect } from 'react';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,14 @@ function App() {
 
         <Route path='/home'>
           <Home />
+        </Route>
+
+        <Route path='/login'>
+          <Login />
+        </Route>
+
+        <Route path='/signup'>
+          <SignUp />
         </Route>
 
         <Route path='/reservations'>
