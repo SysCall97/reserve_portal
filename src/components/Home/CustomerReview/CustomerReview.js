@@ -29,8 +29,8 @@ const CustomerReview = () => {
     let key=0;
     return (
         <section className='mt-5 mb-5 mw-100' id='reviews'>
-            <div className='text-center caption'>Customer Reviews</div>
-            <div className='row d-flex justify-content-center flex-wrap mw-100 pl-5 pt-4 pb-4'>
+            <div data-aos="fade-up" className='text-center caption'>Customer Reviews</div>
+            <div data-aos="fade-down" className='row d-flex justify-content-center flex-wrap mw-100 pl-5 pt-4 pb-4'>
                 {
                     customers.length && 
                     customers.map((customer) => <CustomerReviewCard customer={customer} key={++key} />)

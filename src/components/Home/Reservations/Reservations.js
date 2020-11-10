@@ -15,8 +15,8 @@ const Reservations = () => {
     return (
         <section id='reservations'>
             <section className='mt-5 mb-5 mw-100'>
-                <div className='text-center caption'>Reservations</div>
-                <div className='row d-flex justify-content-center flex-wrap mw-100 pl-5 pt-4 pb-4'>
+                <div data-aos="fade-up" className='text-center caption'>Reservations</div>
+                <div data-aos="fade-down" className='row d-flex justify-content-center flex-wrap mw-100 pl-5 pt-4 pb-4'>
                     {
                         reserves.length &&
                         reserves.map((reserve) => <ReservationCard reserve={reserve} key={reserve._id} />)
