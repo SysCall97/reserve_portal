@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AddReservation = ({ email }) => {
+const AddReservation = ({ email, setIsAllReserve }) => {
     const [resName, setResName] = useState('');
     const [fromDate, setFromDate] = useState(null);
     const [toDate, setToDate] = useState(null);
@@ -27,6 +27,7 @@ const AddReservation = ({ email }) => {
             .then(res => res.json())
             .then(isInserted => {
                 if (isInserted) alert("Inserted successfully");
+                setIsAllReserve(true);
             })
         e.preventDefault();
     }
@@ -34,11 +35,11 @@ const AddReservation = ({ email }) => {
         <section className='d-flex justify-content-center'>
             <div className='formContainer'>
                 <form>
-                    <input type='text' placeholder='Restaurent Name' onChange={(e) => setResName(e.target.value)} /> <br />
-                    <input type='date' placeholder='From date' onChange={(e) => setFromDate(e.target.value)} /> <br />
-                    <input type='date' placeholder='To date' onChange={(e) => setToDate(e.target.value)} /> <br />
+                    <input type='text' placeholder='Restaurent Name' onChange={(e) => setResName(e.target.value)} required/> <br />
+                    <input type='date' placeholder='From date' onChange={(e) => setFromDate(e.target.value)} required/> <br />
+                    <input type='date' placeholder='To date' onChange={(e) => setToDate(e.target.value)} required/> <br />
                     <textarea placeholder='Details' onChange={(e) => setDetails(e.target.value)}></textarea> <br />
-                    <input type='file' onChange={(e) => setImage(e.target.files[0])} />
+                    <input type='file' onChange={(e) => setImage(e.target.files[0])} required/>
                     <button className='btn btn-dark form-btn' onClick={submit}>Add New Reservation</button>
                 </form>
             </div>

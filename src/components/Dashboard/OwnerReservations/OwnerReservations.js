@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Update from '../Update/Update';
 import OwnerReservationCard from './OwnerReservationCard';
 
 const OwnerReservations = ({ email }) => {
     const [reserves, setReserves] = useState([]);
-    
+    const [willUpdate, setWillUpdate] = useState(false);
+    const [updateReserve, setUpdateReserve] = useState({});
+
     useEffect(() => {
         fetch('http://localhost:5000/getOwnerReserves', {
             method: 'POST',
@@ -12,7 +15,7 @@ const OwnerReservations = ({ email }) => {
         })
             .then(res => res.json())
             .then(data => setReserves(data));
-    }, []);
+    }, [willUpdate]);
 
     const deleteReservation = (id) => {
         const updatedReservations = reserves.filter(reserve => reserve._id !== id);
@@ -31,13 +34,27 @@ const OwnerReservations = ({ email }) => {
             })
     }
 
+    const initUpdateProcess = (id) => {
+        setWillUpdate(true);
+        // setUpdateId(id);
+        const updateReserve = reserves.find(reserve => reserve._id === id);
+        setUpdateReserve(updateReserve);
+    }
+
     return (
         <section>
-            <div className='row d-flex justify-content-center flex-wrap mw-100 pl-5 pt-4 pb-4'>
+            <div className='row mw-100 pl-5 pt-1 pb-4'>
                 {
-                    reserves.length ?
-                        reserves.map((reserve) => <OwnerReservationCard reserve={reserve} deleteReservation={deleteReservation} key={reserve._id} />)
-                        : <h1>Reservations loading...</h1>
+                    willUpdate ? <Update updateReserve={updateReserve} setWillUpdate={setWillUpdate} /> :
+                        reserves.length ?
+                            reserves.map((reserve) => <OwnerReservationCard
+                                reserve={reserve}
+                                deleteReservation={deleteReservation}
+                                initUpdateProcess={initUpdateProcess}
+                                key={reserve._id}
+                            />
+                            )
+                            : <h1>Reservations loading...</h1>
                 }
             </div>
         </section>
