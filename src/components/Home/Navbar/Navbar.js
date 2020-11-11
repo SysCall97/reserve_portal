@@ -36,7 +36,7 @@ const Navbar = () => {
                     </li>
 
                     {
-                        user.loggedIn ?
+                        user && user.loggedIn ?
                             <>
                                 <Link className='nav-item ml-4' style={{textDecoration: 'none'}} to='/dashboard'>
                                     <a className='nav-link'>Dashboard</a>

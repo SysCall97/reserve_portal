@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-const AddReservation = (props) => {
-    const email = props.email;
+const AddReservation = ({ email }) => {
     const [resName, setResName] = useState('');
     const [fromDate, setFromDate] = useState(null);
     const [toDate, setToDate] = useState(null);

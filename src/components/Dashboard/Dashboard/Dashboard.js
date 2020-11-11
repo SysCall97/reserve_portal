@@ -5,6 +5,8 @@ import AddReservation from '../AddReservation/AddReservation';
 import OwnerReservations from '../OwnerReservations/OwnerReservations';
 
 const Dashboard = () => {
+    document.title = 'Dashboard';
+    
     const user = JSON.parse(sessionStorage.getItem('user'));
 
     const [isAllReserve, setIsAllReserve] = useState(true);
