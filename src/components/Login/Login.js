@@ -20,7 +20,8 @@ const Login = () => {
         signInUserWithEmailAndPassword(user)
             .then(res => {
                 sessionStorage.setItem('user', JSON.stringify(res));
-                history.replace(from)
+                if(res.loggedIn) history.replace(from);
+                else alert(res.error);
             });
         e.preventDefault();
     }
