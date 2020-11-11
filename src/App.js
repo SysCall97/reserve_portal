@@ -8,6 +8,8 @@ import PageNotFound from './components/PageNotFound/PageNotFound';
 import { useEffect } from 'react';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 
 function App() {
   useEffect(() => {
@@ -35,6 +37,10 @@ function App() {
         <Route path='/signup'>
           <SignUp />
         </Route>
+
+        <PrivateRoute path='/dashboard/reservations'>
+          <Dashboard />
+        </PrivateRoute>
 
         <Route path='/reservations'>
           <AddReservations />

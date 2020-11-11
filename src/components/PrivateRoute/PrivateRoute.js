@@ -1,13 +1,13 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const user = sessionStorage.getItem('user').json();
+    const user = JSON.parse(sessionStorage.getItem('user'));
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                auth.user ? (
+                user.loggedIn ? (
                     children
                 ) : (
                         <Redirect
