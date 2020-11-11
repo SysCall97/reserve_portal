@@ -35,7 +35,9 @@ const SignUp = () => {
 
     return (
         <section className='d-flex justify-content-center align-items-center flex-column pt-5 mt-5'>
-            <div><img src={logo} alt='' width='auto' /></div>
+            <div>
+                <Link to='/'><img src={logo} alt='' width='auto' /></Link>
+            </div>
             <div className='formContainer'>
                 <form>
                     <input type='text' placeholder='Username' onChange={(e) => setName(e.target.value)} required /> <br />

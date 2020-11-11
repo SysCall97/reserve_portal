@@ -38,7 +38,7 @@ function App() {
           <SignUp />
         </Route>
 
-        <PrivateRoute path='/dashboard/reservations'>
+        <PrivateRoute path='/dashboard'>
           <Dashboard />
         </PrivateRoute>
 

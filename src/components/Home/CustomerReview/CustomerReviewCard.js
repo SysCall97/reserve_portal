@@ -2,7 +2,7 @@ import React from 'react';
 
 const CustomerReviewCard = (props) => {
     const { name, img, designation, review } = props.customer;
-    console.log({ name, img, designation, review })
+    
     return (
         <section className="mr-4 mt-4 p-4 col-md-3" style={{ borderRadius: "5px", backgroundColor: "white", border: "none" }}>
             <div className="row">

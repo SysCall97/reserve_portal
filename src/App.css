@@ -39,13 +39,14 @@ body{
 }
 
 .formContainer{
-  border: 1px solid black;
+  border: 1px solid gray;
   margin-top: 30px;
   width: min(100vw, 450px);
   padding: 2%;
+  border-radius: 5px;
 }
 
-input, .form-btn{
+input, .form-btn, textarea{
   width: 100%;
   margin-top: 10px;
 }
@@ -57,4 +58,5 @@ input{
   border-right-style: hidden;
   border-left-style: hidden;
   outline: none;
+  height: 40px;
 }

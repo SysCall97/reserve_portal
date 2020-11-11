@@ -38,7 +38,7 @@ const Navbar = () => {
                     {
                         user.loggedIn ?
                             <>
-                                <Link className='nav-item ml-4' style={{textDecoration: 'none'}} to='/dashboard/reservations'>
+                                <Link className='nav-item ml-4' style={{textDecoration: 'none'}} to='/dashboard'>
                                     <a className='nav-link'>Dashboard</a>
                                 </Link>
 

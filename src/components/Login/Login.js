@@ -20,7 +20,7 @@ const Login = () => {
         signInUserWithEmailAndPassword(user)
             .then(res => {
                 sessionStorage.setItem('user', JSON.stringify(res));
-                if(res.loggedIn) history.replace(from);
+                if (res.loggedIn) history.replace(from);
                 else alert(res.error);
             });
         e.preventDefault();
@@ -28,7 +28,9 @@ const Login = () => {
 
     return (
         <section className='d-flex justify-content-center align-items-center flex-column pt-5 mt-5'>
-            <div><img src={logo} alt='' width='auto' /></div>
+            <div>
+                <Link to='/'><img src={logo} alt='' width='auto' /></Link>
+            </div>
             <div className='formContainer'>
                 <form>
                     <input type='email' placeholder='example@email.com' onChange={(e) => setEmail(e.target.value)} required /> <br />
