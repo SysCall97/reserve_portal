@@ -17,7 +17,7 @@ const Update = (props) => {
         }
 
 
-        fetch(`http://localhost:5000/update/${_id}`, {
+        fetch(`https://polar-eyrie-41428.herokuapp.com/update/${_id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(reservation)

@@ -20,7 +20,7 @@ const AddReservation = ({ email, setIsAllReserve }) => {
         formData.append('file', image);
         formData.append('email', email);
 
-        fetch('http://localhost:5000/addReserves', {
+        fetch('https://polar-eyrie-41428.herokuapp.com/addReserves', {
             method: 'POST',
             body: formData
         })

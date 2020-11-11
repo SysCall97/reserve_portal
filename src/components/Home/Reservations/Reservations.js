@@ -5,7 +5,7 @@ const Reservations = () => {
     const [reserves, setReserves] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/getAllReserves')
+        fetch('https://polar-eyrie-41428.herokuapp.com/getAllReserves')
             .then(res => res.json())
             .then(data => setReserves(data));
     }, []);

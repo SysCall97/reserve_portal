@@ -8,7 +8,7 @@ const OwnerReservations = ({ email }) => {
     const [updateReserve, setUpdateReserve] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5000/getOwnerReserves', {
+        fetch('https://polar-eyrie-41428.herokuapp.com/getOwnerReserves', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email })
@@ -20,7 +20,7 @@ const OwnerReservations = ({ email }) => {
     const deleteReservation = (id) => {
         const updatedReservations = reserves.filter(reserve => reserve._id !== id);
 
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://polar-eyrie-41428.herokuapp.com/delete/${id}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
         })
