@@ -1,6 +1,6 @@
 # Reserve Portal
 
-**Live site:** will be added soon.\
+**Live site:** [https://reservation-portal.netlify.app/]\
 **Server side code** [https://github.com/kaziMashry/reserve_portal_server]
 
 ### Language, library, and packages:
