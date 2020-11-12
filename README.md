@@ -21,3 +21,5 @@
 - A restaurent owner can log in to the portal
 - A restaurent owner can add a new reservation
 - A restaurent owner can edit and delete a reservation
+
+**Resume:** [https://drive.google.com/file/d/1uL0DDwMPt7Sd9SfUg4bwe1NBFbOC04U5/view]
