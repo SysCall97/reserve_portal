@@ -8,7 +8,6 @@
 - React js
 - React router dom
 - Bootstrap
-- particle-js
 - Node Js (for back-end)
 - Mongo DB
 - Firebase authentication
